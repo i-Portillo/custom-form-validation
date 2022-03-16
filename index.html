@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./main.js" defer></script>
+    
+</head>
+<body>
+
+    <div class="container">
+        <h3>Form</h3>
+        <form id="form" autocomplete="off">
+            
+            <div class="row">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="row">
+                <label for="country" class="form-label">Country</label>
+                <select name="country" id="country">
+                    <option value="Spain">Spain</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Austria">Austria</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label for="zip" class="form-label">Zip Code</label>
+                <input type="text" name="zip" id="zip">
+            </div>
+
+            <div class="row">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" name="password" id="password" required>
+                <ul id="password-requirements" class="input-requirements">
+                    <li>At least 8 characters long</li>
+                    <li>Contains at least 1 number</li>
+                    <li>Contains at least 1 lowercase letter</li>
+                    <li>Contains at least 1 uppercase letter</li>
+                    <li>Contains at least 1 special characters (e.g. @ !)</li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <label for="confirm-password" class="form-label">Confirm</label>
+                <input type="password" name="confirm-password" id="confirm-password" required>
+            </div>
+
+            <div class="row">
+                <label for="form-check-label" class="form-check-label">Check me?</label>
+                <input type="checkbox" name="check" id="check">
+            </div>
+
+            <div class="row">
+                <!-- <button type="button" id="submit-btn">Submit</button>
+                <button type="button" id="cancel-btn">Reset</button> -->
+                <input id="submit-btn" type="submit">
+            </div>
+
+        </form>
+    
+</body>
+</html>
